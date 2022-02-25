@@ -5,6 +5,11 @@ TagManager:
   serializedVersion: 2
   tags:
   - Sphere
+  - PlayerRouge
+  - PlayerBleu
+  - PlayerJaune
+  - PlayerVert
+  - Target
   layers:
   - Default
   - TransparentFX
