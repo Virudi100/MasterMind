@@ -1,6 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class LevelManager : MonoBehaviour
 {
@@ -15,21 +17,23 @@ public class LevelManager : MonoBehaviour
     [SerializeField] private bool aSpawn = false;
     private GameObject newSphere;
 
-    private int roundIndex = 1;
+    private int roundIndex = 0;
     private int lAIndex = 1;
 
     [Header("Line Rounds")]
 
     [SerializeField] private GameObject[] linesArrays = new GameObject[11];
 
-
-
+    [SerializeField] private Initialised[] childrens;
+    [SerializeField] private GameObject victoryCanvas;
+    [SerializeField] private Text gudAnswerText;
 
     void Start()
     {
         SetSoluce();
         AssignColor();
-        
+        victoryCanvas.SetActive(false);
+        Play();
     }
 
     private void Update()
@@ -117,8 +121,8 @@ public class LevelManager : MonoBehaviour
             }
             if (solution[b] == 3)
             {
-                solutionLine[b].GetComponent<Renderer>().material.SetColor("_Color", Color.yellow);
-                print("yellow set");
+                solutionLine[b].GetComponent<Renderer>().material.SetColor("_Color", Color.magenta);
+                print("magenta set");
             }
             if (solution[b] == 4)
             {
@@ -133,72 +137,69 @@ public class LevelManager : MonoBehaviour
     {
         switch (roundIndex)
         {
-            case 1:
+            case 0:
 
                 print("Round1");
-                
-                
 
-
-
+                OneMoreRound();
                 break;
         ////////////////////////////////////
             
-            case 2:
+            case 1:
                 print("Round2");
                 OneMoreRound();
 
                 break;
         ///////////////////////////////////
-            case 3:
+            case 2:
                 print("Round3");
                 OneMoreRound();
 
                 break;
         ///////////////////////////////////
-            case 4:
+            case 3:
                 print("Round4");
                 OneMoreRound();
 
                 break;
         ///////////////////////////////////
-            case 5:
+            case 4:
                 print("Round5");
                 OneMoreRound();
 
                 break;
         ///////////////////////////////////
-            case 6:
+            case 5:
                 print("Round6");
                 OneMoreRound();
 
                 break;
         ////////////////////////////////////
-            case 7:
+            case 6:
                 print("Round7");
                 OneMoreRound();
 
                 break;
         ////////////////////////////////////
-            case 8:
+            case 7:
                 print("Round8");
                 OneMoreRound();
 
                 break;
         ////////////////////////////////////
-            case 9:
+            case 8:
                 print("Round9");
                 OneMoreRound();
 
                 break;
         ////////////////////////////////////
-            case 10:
+            case 9:
                 print("Round10");
                 OneMoreRound();
 
                 break;
         ////////////////////////////////////
-            case 11:
+            case 10:
                 print("Round11");
                 OneMoreRound();
 
@@ -209,15 +210,73 @@ public class LevelManager : MonoBehaviour
 
     private void OneMoreRound()
     {
+        
+        childrens = linesArrays[roundIndex].GetComponentsInChildren<Initialised>();
+        foreach(Initialised init in childrens)
+        {
+            init.gameObject.GetComponent<SphereCollider>().enabled = true;
+        }
 
-        Verify();
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            Verify();
+        }
     }
 
     private void Verify()
     {
+        int a = 0;
+        int gudAnswer = 0;
         
+        
+        foreach (Initialised init in childrens)
+        {
+            init.gameObject.GetComponent<SphereCollider>().enabled = false;
+
+            if (init.indexColor == solution[a])
+            {
+                gudAnswer++;
+                gudAnswerText.text = ("Bonnes couleurs au bon emplacement: " + gudAnswer);
+                if(gudAnswer == 4)
+                {
+                    Victory();
+                }
+              
+
+            }
+            else
+            {
+                print("incorrect");
+
+            }
+            a++;
+        }
+                
         
         roundIndex++;
+    }
+
+    private void Victory()
+    {
+        print("Victory");
+        Pause();
+
+        victoryCanvas.SetActive(true);
+    }
+
+    public void Retry()
+    {
+        SceneManager.LoadScene("StartLevel");
+    }
+
+    private void Pause()
+    {
+        Time.timeScale = 0;
+    }
+
+    private void Play()
+    {
+        Time.timeScale = 1;
     }
 
     

@@ -4,12 +4,12 @@ using UnityEngine;
 
 public class Initialised : MonoBehaviour
 {
-    private int indexColor;
+    public int indexColor = 0;
 
     // Start is called before the first frame update
     void Start()
     {
-        //gameObject.GetComponent<SphereCollider>().enabled = false;
+        gameObject.GetComponent<SphereCollider>().enabled = false;
 
        
     }
@@ -28,9 +28,9 @@ public class Initialised : MonoBehaviour
             indexColor = 2;
         }
 
-        if (gameObject.GetComponent<Renderer>().material.color == Color.yellow)
+        if (gameObject.GetComponent<Renderer>().material.color == Color.magenta)
         {
-            print("set yellow color");
+            print("set Magenta color");
             indexColor = 3;
         }
 
