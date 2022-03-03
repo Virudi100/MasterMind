@@ -16,10 +16,11 @@ public class LevelManager : MonoBehaviour
     private GameObject newSphere;
 
     private int roundIndex = 1;
+    private int lAIndex = 1;
 
     [Header("Line Rounds")]
-    
-    [SerializeField] private GameObject[][] linesArrays = new GameObject[10][];
+
+    [SerializeField] private GameObject[] linesArrays = new GameObject[11];
 
 
 
@@ -28,6 +29,7 @@ public class LevelManager : MonoBehaviour
     {
         SetSoluce();
         AssignColor();
+        
     }
 
     private void Update()
@@ -208,11 +210,12 @@ public class LevelManager : MonoBehaviour
     private void OneMoreRound()
     {
 
+        Verify();
     }
 
     private void Verify()
     {
-
+        
         
         roundIndex++;
     }

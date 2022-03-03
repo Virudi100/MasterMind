@@ -9,7 +9,8 @@ public class Spheres : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Target"))
         {
-            other.gameObject.GetComponent<Renderer>().material = gameObject.GetComponent<Renderer>().material;
+            other.gameObject.GetComponent<Renderer>().material = gameObject.GetComponent<Renderer>().material;  
+
             Destroy(gameObject);
         }
     }

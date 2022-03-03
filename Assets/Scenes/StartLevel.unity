@@ -210,6 +210,22 @@ PrefabInstance:
       propertyPath: m_TagString
       value: Target
       objectReference: {fileID: 0}
+    - target: {fileID: 8278891651615957550, guid: 1d5bdf5e89a59464e8d629d1bd8171da, type: 3}
+      propertyPath: spheres.Array.data[0]
+      value: 
+      objectReference: {fileID: 17207734}
+    - target: {fileID: 8278891651615957550, guid: 1d5bdf5e89a59464e8d629d1bd8171da, type: 3}
+      propertyPath: spheres.Array.data[1]
+      value: 
+      objectReference: {fileID: 17207733}
+    - target: {fileID: 8278891651615957550, guid: 1d5bdf5e89a59464e8d629d1bd8171da, type: 3}
+      propertyPath: spheres.Array.data[2]
+      value: 
+      objectReference: {fileID: 17207732}
+    - target: {fileID: 8278891651615957550, guid: 1d5bdf5e89a59464e8d629d1bd8171da, type: 3}
+      propertyPath: spheres.Array.data[3]
+      value: 
+      objectReference: {fileID: 17207731}
     - target: {fileID: 8391463063309191657, guid: 1d5bdf5e89a59464e8d629d1bd8171da, type: 3}
       propertyPath: m_Name
       value: Sphere3R5
@@ -239,6 +255,31 @@ PrefabInstance:
 --- !u!4 &17207730 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3084470259696933708, guid: 1d5bdf5e89a59464e8d629d1bd8171da, type: 3}
+  m_PrefabInstance: {fileID: 17207729}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &17207731 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8551208837989028482, guid: 1d5bdf5e89a59464e8d629d1bd8171da, type: 3}
+  m_PrefabInstance: {fileID: 17207729}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &17207732 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8391463063309191657, guid: 1d5bdf5e89a59464e8d629d1bd8171da, type: 3}
+  m_PrefabInstance: {fileID: 17207729}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &17207733 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 233495115096604297, guid: 1d5bdf5e89a59464e8d629d1bd8171da, type: 3}
+  m_PrefabInstance: {fileID: 17207729}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &17207734 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1683500128989674500, guid: 1d5bdf5e89a59464e8d629d1bd8171da, type: 3}
+  m_PrefabInstance: {fileID: 17207729}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &17207735 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4449827228365425778, guid: 1d5bdf5e89a59464e8d629d1bd8171da, type: 3}
   m_PrefabInstance: {fileID: 17207729}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &100138024
@@ -332,6 +373,22 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 8278891651615957550, guid: 1d5bdf5e89a59464e8d629d1bd8171da, type: 3}
+      propertyPath: spheres.Array.data[0]
+      value: 
+      objectReference: {fileID: 100138029}
+    - target: {fileID: 8278891651615957550, guid: 1d5bdf5e89a59464e8d629d1bd8171da, type: 3}
+      propertyPath: spheres.Array.data[1]
+      value: 
+      objectReference: {fileID: 100138028}
+    - target: {fileID: 8278891651615957550, guid: 1d5bdf5e89a59464e8d629d1bd8171da, type: 3}
+      propertyPath: spheres.Array.data[2]
+      value: 
+      objectReference: {fileID: 100138027}
+    - target: {fileID: 8278891651615957550, guid: 1d5bdf5e89a59464e8d629d1bd8171da, type: 3}
+      propertyPath: spheres.Array.data[3]
+      value: 
+      objectReference: {fileID: 100138026}
     - target: {fileID: 8391463063309191657, guid: 1d5bdf5e89a59464e8d629d1bd8171da, type: 3}
       propertyPath: m_Name
       value: Sphere3R2
@@ -361,6 +418,31 @@ PrefabInstance:
 --- !u!4 &100138025 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3084470259696933708, guid: 1d5bdf5e89a59464e8d629d1bd8171da, type: 3}
+  m_PrefabInstance: {fileID: 100138024}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &100138026 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8551208837989028482, guid: 1d5bdf5e89a59464e8d629d1bd8171da, type: 3}
+  m_PrefabInstance: {fileID: 100138024}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &100138027 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8391463063309191657, guid: 1d5bdf5e89a59464e8d629d1bd8171da, type: 3}
+  m_PrefabInstance: {fileID: 100138024}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &100138028 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 233495115096604297, guid: 1d5bdf5e89a59464e8d629d1bd8171da, type: 3}
+  m_PrefabInstance: {fileID: 100138024}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &100138029 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1683500128989674500, guid: 1d5bdf5e89a59464e8d629d1bd8171da, type: 3}
+  m_PrefabInstance: {fileID: 100138024}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &100138030 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4449827228365425778, guid: 1d5bdf5e89a59464e8d629d1bd8171da, type: 3}
   m_PrefabInstance: {fileID: 100138024}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &467572861
@@ -450,6 +532,22 @@ PrefabInstance:
       propertyPath: m_TagString
       value: Target
       objectReference: {fileID: 0}
+    - target: {fileID: 8278891651615957550, guid: 1d5bdf5e89a59464e8d629d1bd8171da, type: 3}
+      propertyPath: spheres.Array.data[0]
+      value: 
+      objectReference: {fileID: 467572866}
+    - target: {fileID: 8278891651615957550, guid: 1d5bdf5e89a59464e8d629d1bd8171da, type: 3}
+      propertyPath: spheres.Array.data[1]
+      value: 
+      objectReference: {fileID: 467572865}
+    - target: {fileID: 8278891651615957550, guid: 1d5bdf5e89a59464e8d629d1bd8171da, type: 3}
+      propertyPath: spheres.Array.data[2]
+      value: 
+      objectReference: {fileID: 467572864}
+    - target: {fileID: 8278891651615957550, guid: 1d5bdf5e89a59464e8d629d1bd8171da, type: 3}
+      propertyPath: spheres.Array.data[3]
+      value: 
+      objectReference: {fileID: 467572863}
     - target: {fileID: 8391463063309191657, guid: 1d5bdf5e89a59464e8d629d1bd8171da, type: 3}
       propertyPath: m_Name
       value: Sphere3R4
@@ -479,6 +577,31 @@ PrefabInstance:
 --- !u!4 &467572862 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3084470259696933708, guid: 1d5bdf5e89a59464e8d629d1bd8171da, type: 3}
+  m_PrefabInstance: {fileID: 467572861}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &467572863 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8551208837989028482, guid: 1d5bdf5e89a59464e8d629d1bd8171da, type: 3}
+  m_PrefabInstance: {fileID: 467572861}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &467572864 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8391463063309191657, guid: 1d5bdf5e89a59464e8d629d1bd8171da, type: 3}
+  m_PrefabInstance: {fileID: 467572861}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &467572865 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 233495115096604297, guid: 1d5bdf5e89a59464e8d629d1bd8171da, type: 3}
+  m_PrefabInstance: {fileID: 467572861}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &467572866 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1683500128989674500, guid: 1d5bdf5e89a59464e8d629d1bd8171da, type: 3}
+  m_PrefabInstance: {fileID: 467572861}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &467572867 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4449827228365425778, guid: 1d5bdf5e89a59464e8d629d1bd8171da, type: 3}
   m_PrefabInstance: {fileID: 467572861}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &524369377
@@ -598,6 +721,22 @@ PrefabInstance:
       propertyPath: m_TagString
       value: Target
       objectReference: {fileID: 0}
+    - target: {fileID: 8278891651615957550, guid: 1d5bdf5e89a59464e8d629d1bd8171da, type: 3}
+      propertyPath: spheres.Array.data[0]
+      value: 
+      objectReference: {fileID: 943526119}
+    - target: {fileID: 8278891651615957550, guid: 1d5bdf5e89a59464e8d629d1bd8171da, type: 3}
+      propertyPath: spheres.Array.data[1]
+      value: 
+      objectReference: {fileID: 943526118}
+    - target: {fileID: 8278891651615957550, guid: 1d5bdf5e89a59464e8d629d1bd8171da, type: 3}
+      propertyPath: spheres.Array.data[2]
+      value: 
+      objectReference: {fileID: 943526117}
+    - target: {fileID: 8278891651615957550, guid: 1d5bdf5e89a59464e8d629d1bd8171da, type: 3}
+      propertyPath: spheres.Array.data[3]
+      value: 
+      objectReference: {fileID: 943526116}
     - target: {fileID: 8391463063309191657, guid: 1d5bdf5e89a59464e8d629d1bd8171da, type: 3}
       propertyPath: m_Name
       value: Sphere3R8
@@ -627,6 +766,31 @@ PrefabInstance:
 --- !u!4 &943526115 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3084470259696933708, guid: 1d5bdf5e89a59464e8d629d1bd8171da, type: 3}
+  m_PrefabInstance: {fileID: 943526114}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &943526116 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8551208837989028482, guid: 1d5bdf5e89a59464e8d629d1bd8171da, type: 3}
+  m_PrefabInstance: {fileID: 943526114}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &943526117 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8391463063309191657, guid: 1d5bdf5e89a59464e8d629d1bd8171da, type: 3}
+  m_PrefabInstance: {fileID: 943526114}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &943526118 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 233495115096604297, guid: 1d5bdf5e89a59464e8d629d1bd8171da, type: 3}
+  m_PrefabInstance: {fileID: 943526114}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &943526119 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1683500128989674500, guid: 1d5bdf5e89a59464e8d629d1bd8171da, type: 3}
+  m_PrefabInstance: {fileID: 943526114}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &943526120 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4449827228365425778, guid: 1d5bdf5e89a59464e8d629d1bd8171da, type: 3}
   m_PrefabInstance: {fileID: 943526114}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &951398158
@@ -842,6 +1006,22 @@ PrefabInstance:
       propertyPath: m_TagString
       value: Target
       objectReference: {fileID: 0}
+    - target: {fileID: 8278891651615957550, guid: 1d5bdf5e89a59464e8d629d1bd8171da, type: 3}
+      propertyPath: spheres.Array.data[0]
+      value: 
+      objectReference: {fileID: 1101588958}
+    - target: {fileID: 8278891651615957550, guid: 1d5bdf5e89a59464e8d629d1bd8171da, type: 3}
+      propertyPath: spheres.Array.data[1]
+      value: 
+      objectReference: {fileID: 1086888652}
+    - target: {fileID: 8278891651615957550, guid: 1d5bdf5e89a59464e8d629d1bd8171da, type: 3}
+      propertyPath: spheres.Array.data[2]
+      value: 
+      objectReference: {fileID: 1071052400}
+    - target: {fileID: 8278891651615957550, guid: 1d5bdf5e89a59464e8d629d1bd8171da, type: 3}
+      propertyPath: spheres.Array.data[3]
+      value: 
+      objectReference: {fileID: 1440610490}
     - target: {fileID: 8391463063309191657, guid: 1d5bdf5e89a59464e8d629d1bd8171da, type: 3}
       propertyPath: m_Name
       value: Sphere3R1
@@ -868,6 +1048,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1d5bdf5e89a59464e8d629d1bd8171da, type: 3}
+--- !u!1 &986194940 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4449827228365425778, guid: 1d5bdf5e89a59464e8d629d1bd8171da, type: 3}
+  m_PrefabInstance: {fileID: 986194939}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1071052400 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8391463063309191657, guid: 1d5bdf5e89a59464e8d629d1bd8171da, type: 3}
@@ -998,6 +1183,22 @@ PrefabInstance:
       propertyPath: m_TagString
       value: Target
       objectReference: {fileID: 0}
+    - target: {fileID: 8278891651615957550, guid: 1d5bdf5e89a59464e8d629d1bd8171da, type: 3}
+      propertyPath: spheres.Array.data[0]
+      value: 
+      objectReference: {fileID: 1106852223}
+    - target: {fileID: 8278891651615957550, guid: 1d5bdf5e89a59464e8d629d1bd8171da, type: 3}
+      propertyPath: spheres.Array.data[1]
+      value: 
+      objectReference: {fileID: 1106852222}
+    - target: {fileID: 8278891651615957550, guid: 1d5bdf5e89a59464e8d629d1bd8171da, type: 3}
+      propertyPath: spheres.Array.data[2]
+      value: 
+      objectReference: {fileID: 1106852221}
+    - target: {fileID: 8278891651615957550, guid: 1d5bdf5e89a59464e8d629d1bd8171da, type: 3}
+      propertyPath: spheres.Array.data[3]
+      value: 
+      objectReference: {fileID: 1106852220}
     - target: {fileID: 8391463063309191657, guid: 1d5bdf5e89a59464e8d629d1bd8171da, type: 3}
       propertyPath: m_Name
       value: Sphere3R10
@@ -1027,6 +1228,31 @@ PrefabInstance:
 --- !u!4 &1106852219 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3084470259696933708, guid: 1d5bdf5e89a59464e8d629d1bd8171da, type: 3}
+  m_PrefabInstance: {fileID: 1106852218}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1106852220 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8551208837989028482, guid: 1d5bdf5e89a59464e8d629d1bd8171da, type: 3}
+  m_PrefabInstance: {fileID: 1106852218}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1106852221 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8391463063309191657, guid: 1d5bdf5e89a59464e8d629d1bd8171da, type: 3}
+  m_PrefabInstance: {fileID: 1106852218}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1106852222 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 233495115096604297, guid: 1d5bdf5e89a59464e8d629d1bd8171da, type: 3}
+  m_PrefabInstance: {fileID: 1106852218}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1106852223 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1683500128989674500, guid: 1d5bdf5e89a59464e8d629d1bd8171da, type: 3}
+  m_PrefabInstance: {fileID: 1106852218}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1106852224 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4449827228365425778, guid: 1d5bdf5e89a59464e8d629d1bd8171da, type: 3}
   m_PrefabInstance: {fileID: 1106852218}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1147854035
@@ -1116,6 +1342,22 @@ PrefabInstance:
       propertyPath: m_TagString
       value: Target
       objectReference: {fileID: 0}
+    - target: {fileID: 8278891651615957550, guid: 1d5bdf5e89a59464e8d629d1bd8171da, type: 3}
+      propertyPath: spheres.Array.data[0]
+      value: 
+      objectReference: {fileID: 1147854040}
+    - target: {fileID: 8278891651615957550, guid: 1d5bdf5e89a59464e8d629d1bd8171da, type: 3}
+      propertyPath: spheres.Array.data[1]
+      value: 
+      objectReference: {fileID: 1147854039}
+    - target: {fileID: 8278891651615957550, guid: 1d5bdf5e89a59464e8d629d1bd8171da, type: 3}
+      propertyPath: spheres.Array.data[2]
+      value: 
+      objectReference: {fileID: 1147854038}
+    - target: {fileID: 8278891651615957550, guid: 1d5bdf5e89a59464e8d629d1bd8171da, type: 3}
+      propertyPath: spheres.Array.data[3]
+      value: 
+      objectReference: {fileID: 1147854037}
     - target: {fileID: 8391463063309191657, guid: 1d5bdf5e89a59464e8d629d1bd8171da, type: 3}
       propertyPath: m_Name
       value: Sphere3R7
@@ -1145,6 +1387,31 @@ PrefabInstance:
 --- !u!4 &1147854036 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3084470259696933708, guid: 1d5bdf5e89a59464e8d629d1bd8171da, type: 3}
+  m_PrefabInstance: {fileID: 1147854035}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1147854037 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8551208837989028482, guid: 1d5bdf5e89a59464e8d629d1bd8171da, type: 3}
+  m_PrefabInstance: {fileID: 1147854035}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1147854038 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8391463063309191657, guid: 1d5bdf5e89a59464e8d629d1bd8171da, type: 3}
+  m_PrefabInstance: {fileID: 1147854035}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1147854039 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 233495115096604297, guid: 1d5bdf5e89a59464e8d629d1bd8171da, type: 3}
+  m_PrefabInstance: {fileID: 1147854035}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1147854040 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1683500128989674500, guid: 1d5bdf5e89a59464e8d629d1bd8171da, type: 3}
+  m_PrefabInstance: {fileID: 1147854035}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1147854041 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4449827228365425778, guid: 1d5bdf5e89a59464e8d629d1bd8171da, type: 3}
   m_PrefabInstance: {fileID: 1147854035}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &1335691685
@@ -1198,11 +1465,18 @@ MonoBehaviour:
   - {fileID: 8551208838205669400}
   cam: {fileID: 963194227}
   aSpawn: 0
-  lineRound1:
-  - {fileID: 1101588958}
-  - {fileID: 1086888652}
-  - {fileID: 1071052400}
-  - {fileID: 1440610490}
+  linesArrays:
+  - {fileID: 986194940}
+  - {fileID: 100138030}
+  - {fileID: 1967368900}
+  - {fileID: 467572867}
+  - {fileID: 17207735}
+  - {fileID: 1577066625}
+  - {fileID: 1147854041}
+  - {fileID: 943526120}
+  - {fileID: 2032589842}
+  - {fileID: 1106852224}
+  - {fileID: 5664278925487685437}
 --- !u!54 &1400664241
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1323,6 +1597,22 @@ PrefabInstance:
       propertyPath: m_TagString
       value: Target
       objectReference: {fileID: 0}
+    - target: {fileID: 8278891651615957550, guid: 1d5bdf5e89a59464e8d629d1bd8171da, type: 3}
+      propertyPath: spheres.Array.data[0]
+      value: 
+      objectReference: {fileID: 1577066624}
+    - target: {fileID: 8278891651615957550, guid: 1d5bdf5e89a59464e8d629d1bd8171da, type: 3}
+      propertyPath: spheres.Array.data[1]
+      value: 
+      objectReference: {fileID: 1577066623}
+    - target: {fileID: 8278891651615957550, guid: 1d5bdf5e89a59464e8d629d1bd8171da, type: 3}
+      propertyPath: spheres.Array.data[2]
+      value: 
+      objectReference: {fileID: 1577066622}
+    - target: {fileID: 8278891651615957550, guid: 1d5bdf5e89a59464e8d629d1bd8171da, type: 3}
+      propertyPath: spheres.Array.data[3]
+      value: 
+      objectReference: {fileID: 1577066621}
     - target: {fileID: 8391463063309191657, guid: 1d5bdf5e89a59464e8d629d1bd8171da, type: 3}
       propertyPath: m_Name
       value: Sphere3R6
@@ -1352,6 +1642,31 @@ PrefabInstance:
 --- !u!4 &1577066620 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3084470259696933708, guid: 1d5bdf5e89a59464e8d629d1bd8171da, type: 3}
+  m_PrefabInstance: {fileID: 1577066619}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1577066621 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8551208837989028482, guid: 1d5bdf5e89a59464e8d629d1bd8171da, type: 3}
+  m_PrefabInstance: {fileID: 1577066619}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1577066622 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8391463063309191657, guid: 1d5bdf5e89a59464e8d629d1bd8171da, type: 3}
+  m_PrefabInstance: {fileID: 1577066619}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1577066623 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 233495115096604297, guid: 1d5bdf5e89a59464e8d629d1bd8171da, type: 3}
+  m_PrefabInstance: {fileID: 1577066619}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1577066624 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1683500128989674500, guid: 1d5bdf5e89a59464e8d629d1bd8171da, type: 3}
+  m_PrefabInstance: {fileID: 1577066619}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1577066625 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4449827228365425778, guid: 1d5bdf5e89a59464e8d629d1bd8171da, type: 3}
   m_PrefabInstance: {fileID: 1577066619}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &1770052180
@@ -1592,6 +1907,22 @@ PrefabInstance:
       propertyPath: m_TagString
       value: Target
       objectReference: {fileID: 0}
+    - target: {fileID: 8278891651615957550, guid: 1d5bdf5e89a59464e8d629d1bd8171da, type: 3}
+      propertyPath: spheres.Array.data[0]
+      value: 
+      objectReference: {fileID: 1967368899}
+    - target: {fileID: 8278891651615957550, guid: 1d5bdf5e89a59464e8d629d1bd8171da, type: 3}
+      propertyPath: spheres.Array.data[1]
+      value: 
+      objectReference: {fileID: 1967368898}
+    - target: {fileID: 8278891651615957550, guid: 1d5bdf5e89a59464e8d629d1bd8171da, type: 3}
+      propertyPath: spheres.Array.data[2]
+      value: 
+      objectReference: {fileID: 1967368897}
+    - target: {fileID: 8278891651615957550, guid: 1d5bdf5e89a59464e8d629d1bd8171da, type: 3}
+      propertyPath: spheres.Array.data[3]
+      value: 
+      objectReference: {fileID: 1967368896}
     - target: {fileID: 8391463063309191657, guid: 1d5bdf5e89a59464e8d629d1bd8171da, type: 3}
       propertyPath: m_Name
       value: Sphere3R3
@@ -1621,6 +1952,31 @@ PrefabInstance:
 --- !u!4 &1967368895 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3084470259696933708, guid: 1d5bdf5e89a59464e8d629d1bd8171da, type: 3}
+  m_PrefabInstance: {fileID: 1967368894}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1967368896 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8551208837989028482, guid: 1d5bdf5e89a59464e8d629d1bd8171da, type: 3}
+  m_PrefabInstance: {fileID: 1967368894}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1967368897 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8391463063309191657, guid: 1d5bdf5e89a59464e8d629d1bd8171da, type: 3}
+  m_PrefabInstance: {fileID: 1967368894}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1967368898 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 233495115096604297, guid: 1d5bdf5e89a59464e8d629d1bd8171da, type: 3}
+  m_PrefabInstance: {fileID: 1967368894}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1967368899 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1683500128989674500, guid: 1d5bdf5e89a59464e8d629d1bd8171da, type: 3}
+  m_PrefabInstance: {fileID: 1967368894}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1967368900 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4449827228365425778, guid: 1d5bdf5e89a59464e8d629d1bd8171da, type: 3}
   m_PrefabInstance: {fileID: 1967368894}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &2032589836
@@ -1710,6 +2066,22 @@ PrefabInstance:
       propertyPath: m_TagString
       value: Target
       objectReference: {fileID: 0}
+    - target: {fileID: 8278891651615957550, guid: 1d5bdf5e89a59464e8d629d1bd8171da, type: 3}
+      propertyPath: spheres.Array.data[0]
+      value: 
+      objectReference: {fileID: 2032589841}
+    - target: {fileID: 8278891651615957550, guid: 1d5bdf5e89a59464e8d629d1bd8171da, type: 3}
+      propertyPath: spheres.Array.data[1]
+      value: 
+      objectReference: {fileID: 2032589840}
+    - target: {fileID: 8278891651615957550, guid: 1d5bdf5e89a59464e8d629d1bd8171da, type: 3}
+      propertyPath: spheres.Array.data[2]
+      value: 
+      objectReference: {fileID: 2032589839}
+    - target: {fileID: 8278891651615957550, guid: 1d5bdf5e89a59464e8d629d1bd8171da, type: 3}
+      propertyPath: spheres.Array.data[3]
+      value: 
+      objectReference: {fileID: 2032589838}
     - target: {fileID: 8391463063309191657, guid: 1d5bdf5e89a59464e8d629d1bd8171da, type: 3}
       propertyPath: m_Name
       value: Sphere3R9
@@ -1739,6 +2111,31 @@ PrefabInstance:
 --- !u!4 &2032589837 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3084470259696933708, guid: 1d5bdf5e89a59464e8d629d1bd8171da, type: 3}
+  m_PrefabInstance: {fileID: 2032589836}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &2032589838 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8551208837989028482, guid: 1d5bdf5e89a59464e8d629d1bd8171da, type: 3}
+  m_PrefabInstance: {fileID: 2032589836}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &2032589839 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8391463063309191657, guid: 1d5bdf5e89a59464e8d629d1bd8171da, type: 3}
+  m_PrefabInstance: {fileID: 2032589836}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &2032589840 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 233495115096604297, guid: 1d5bdf5e89a59464e8d629d1bd8171da, type: 3}
+  m_PrefabInstance: {fileID: 2032589836}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &2032589841 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1683500128989674500, guid: 1d5bdf5e89a59464e8d629d1bd8171da, type: 3}
+  m_PrefabInstance: {fileID: 2032589836}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &2032589842 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4449827228365425778, guid: 1d5bdf5e89a59464e8d629d1bd8171da, type: 3}
   m_PrefabInstance: {fileID: 2032589836}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &2101140838
@@ -2360,6 +2757,22 @@ PrefabInstance:
       propertyPath: m_TagString
       value: Target
       objectReference: {fileID: 0}
+    - target: {fileID: 8278891651615957550, guid: 1d5bdf5e89a59464e8d629d1bd8171da, type: 3}
+      propertyPath: spheres.Array.data[0]
+      value: 
+      objectReference: {fileID: 5664278925487685436}
+    - target: {fileID: 8278891651615957550, guid: 1d5bdf5e89a59464e8d629d1bd8171da, type: 3}
+      propertyPath: spheres.Array.data[1]
+      value: 
+      objectReference: {fileID: 5664278925487685435}
+    - target: {fileID: 8278891651615957550, guid: 1d5bdf5e89a59464e8d629d1bd8171da, type: 3}
+      propertyPath: spheres.Array.data[2]
+      value: 
+      objectReference: {fileID: 5664278925487685434}
+    - target: {fileID: 8278891651615957550, guid: 1d5bdf5e89a59464e8d629d1bd8171da, type: 3}
+      propertyPath: spheres.Array.data[3]
+      value: 
+      objectReference: {fileID: 5664278925487685433}
     - target: {fileID: 8391463063309191657, guid: 1d5bdf5e89a59464e8d629d1bd8171da, type: 3}
       propertyPath: m_Name
       value: Sphere3R11
@@ -2390,6 +2803,31 @@ PrefabInstance:
 --- !u!4 &5664278925487685432 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3084470259696933708, guid: 1d5bdf5e89a59464e8d629d1bd8171da, type: 3}
+  m_PrefabInstance: {fileID: 5664278925487685431}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &5664278925487685433 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8551208837989028482, guid: 1d5bdf5e89a59464e8d629d1bd8171da, type: 3}
+  m_PrefabInstance: {fileID: 5664278925487685431}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &5664278925487685434 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8391463063309191657, guid: 1d5bdf5e89a59464e8d629d1bd8171da, type: 3}
+  m_PrefabInstance: {fileID: 5664278925487685431}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &5664278925487685435 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 233495115096604297, guid: 1d5bdf5e89a59464e8d629d1bd8171da, type: 3}
+  m_PrefabInstance: {fileID: 5664278925487685431}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &5664278925487685436 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1683500128989674500, guid: 1d5bdf5e89a59464e8d629d1bd8171da, type: 3}
+  m_PrefabInstance: {fileID: 5664278925487685431}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &5664278925487685437 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4449827228365425778, guid: 1d5bdf5e89a59464e8d629d1bd8171da, type: 3}
   m_PrefabInstance: {fileID: 5664278925487685431}
   m_PrefabAsset: {fileID: 0}
 --- !u!33 &6412538792067886657
