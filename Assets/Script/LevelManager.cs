@@ -56,10 +56,16 @@ public class LevelManager : MonoBehaviour
             if(newSphere != null) 
                 newSphere.transform.position = new Vector3(hit.point.x, 0, hit.point.z);
         }
+
         if (Input.GetKeyUp(KeyCode.Mouse0))
         {
             Destroy(newSphere);
             aSpawn = false;
+        }
+
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            Verify();
         }
     }
 
@@ -210,16 +216,11 @@ public class LevelManager : MonoBehaviour
 
     private void OneMoreRound()
     {
-        
         childrens = linesArrays[roundIndex].GetComponentsInChildren<Initialised>();
+
         foreach(Initialised init in childrens)
         {
             init.gameObject.GetComponent<SphereCollider>().enabled = true;
-        }
-
-        if (Input.GetKeyDown(KeyCode.Space))
-        {
-            Verify();
         }
     }
 
@@ -237,12 +238,11 @@ public class LevelManager : MonoBehaviour
             {
                 gudAnswer++;
                 gudAnswerText.text = ("Bonnes couleurs au bon emplacement: " + gudAnswer);
-                if(gudAnswer == 4)
+
+                if (gudAnswer == 4)
                 {
                     Victory();
                 }
-              
-
             }
             else
             {
@@ -252,7 +252,6 @@ public class LevelManager : MonoBehaviour
             a++;
         }
                 
-        
         roundIndex++;
     }
 
@@ -278,6 +277,4 @@ public class LevelManager : MonoBehaviour
     {
         Time.timeScale = 1;
     }
-
-    
 }

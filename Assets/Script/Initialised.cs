@@ -10,8 +10,6 @@ public class Initialised : MonoBehaviour
     void Start()
     {
         gameObject.GetComponent<SphereCollider>().enabled = false;
-
-       
     }
 
     private void Update()
