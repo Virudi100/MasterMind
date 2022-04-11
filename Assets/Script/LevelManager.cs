@@ -65,7 +65,10 @@ public class LevelManager : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.Space))
         {
-            Verify();
+            if (linesArrays[roundIndex].GetComponent<RecupList>().allChanged == true)
+            {
+                Verify();
+            }
         }
     }
 
@@ -112,7 +115,6 @@ public class LevelManager : MonoBehaviour
 
     private void AssignColor()
     {
-        
         foreach (GameObject sphere in solutionLine)
         {
             if (solution[b] == 1)
@@ -144,73 +146,46 @@ public class LevelManager : MonoBehaviour
         switch (roundIndex)
         {
             case 0:
-
-                print("Round1");
-
                 OneMoreRound();
                 break;
-        ////////////////////////////////////
-            
+            ////////////////////////////////////
             case 1:
-                print("Round2");
-                OneMoreRound();
-
                 break;
-        ///////////////////////////////////
+            ///////////////////////////////////
             case 2:
-                print("Round3");
-                OneMoreRound();
-
                 break;
-        ///////////////////////////////////
+            ///////////////////////////////////
             case 3:
-                print("Round4");
-                OneMoreRound();
-
                 break;
-        ///////////////////////////////////
+            ///////////////////////////////////
             case 4:
-                print("Round5");
-                OneMoreRound();
-
                 break;
-        ///////////////////////////////////
+            ///////////////////////////////////
             case 5:
-                print("Round6");
-                OneMoreRound();
-
                 break;
-        ////////////////////////////////////
+            ////////////////////////////////////
             case 6:
-                print("Round7");
-                OneMoreRound();
-
                 break;
-        ////////////////////////////////////
+            ////////////////////////////////////
             case 7:
-                print("Round8");
-                OneMoreRound();
-
                 break;
-        ////////////////////////////////////
+            ////////////////////////////////////
             case 8:
-                print("Round9");
-                OneMoreRound();
-
                 break;
-        ////////////////////////////////////
+            ////////////////////////////////////
             case 9:
-                print("Round10");
-                OneMoreRound();
-
                 break;
-        ////////////////////////////////////
+            ////////////////////////////////////
             case 10:
-                print("Round11");
-                OneMoreRound();
-
                 break;
-        ////////////////////////////////////
+            ////////////////////////////////////
+            case 11:
+                break;
+            ////////////////////////////////////
+            case 12:
+                GameOver();
+                break;
+            ////////////////////////////////////
         }
     }
 
@@ -224,14 +199,19 @@ public class LevelManager : MonoBehaviour
         }
     }
 
+    private void GameOver()
+    {
+
+    }
+
     private void Verify()
     {
         int a = 0;
         int gudAnswer = 0;
         
-        
         foreach (Initialised init in childrens)
         {
+            print("in foreach init");
             init.gameObject.GetComponent<SphereCollider>().enabled = false;
 
             if (init.indexColor == solution[a])
@@ -253,6 +233,10 @@ public class LevelManager : MonoBehaviour
         }
                 
         roundIndex++;
+        print("Next Round");
+        print("Current Round " + roundIndex);
+
+        OneMoreRound();
     }
 
     private void Victory()

@@ -4,7 +4,9 @@ using UnityEngine;
 
 public class Initialised : MonoBehaviour
 {
-    public int indexColor = 0;
+    [HideInInspector] public int indexColor = 0;
+    [HideInInspector] public bool changed = false;
+
 
     // Start is called before the first frame update
     void Start()
@@ -14,30 +16,34 @@ public class Initialised : MonoBehaviour
 
     private void Update()
     {
+        ChangeColor();
+    }
+
+    private void ChangeColor()
+    {
+        
         if (gameObject.GetComponent<Renderer>().material.color == Color.red)
         {
-            print("set red color");
+            //print("set red color");
             indexColor = 1;
         }
 
         if (gameObject.GetComponent<Renderer>().material.color == Color.blue)
         {
-            print("set blue color");
+            //print("set blue color");
             indexColor = 2;
         }
 
         if (gameObject.GetComponent<Renderer>().material.color == Color.magenta)
         {
-            print("set Magenta color");
+           //print("set Magenta color");
             indexColor = 3;
         }
 
         if (gameObject.GetComponent<Renderer>().material.color == Color.green)
         {
-            print("set green color");
+            //print("set green color");
             indexColor = 4;
         }
     }
-
-
 }
