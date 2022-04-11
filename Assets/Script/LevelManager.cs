@@ -26,6 +26,7 @@ public class LevelManager : MonoBehaviour
 
     [SerializeField] private Initialised[] childrens;
     [SerializeField] private GameObject victoryCanvas;
+    [SerializeField] private GameObject defeatCanvas;
     [SerializeField] private Text gudAnswerText;
 
     void Start()
@@ -33,6 +34,7 @@ public class LevelManager : MonoBehaviour
         SetSoluce();
         AssignColor();
         victoryCanvas.SetActive(false);
+        defeatCanvas.SetActive(false);
         Play();
     }
 
@@ -201,7 +203,8 @@ public class LevelManager : MonoBehaviour
 
     private void GameOver()
     {
-
+        Pause();
+        defeatCanvas.SetActive(true);
     }
 
     private void Verify()
