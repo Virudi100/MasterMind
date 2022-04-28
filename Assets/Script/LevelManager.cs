@@ -17,8 +17,7 @@ public class LevelManager : MonoBehaviour
     [SerializeField] private bool aSpawn = false;
     private GameObject newSphere;
 
-    private int roundIndex = 0;
-    private int lAIndex = 1;
+    [SerializeField] private int roundIndex = 0;
 
     [Header("Line Rounds")]
 
@@ -29,13 +28,20 @@ public class LevelManager : MonoBehaviour
     [SerializeField] private GameObject defeatCanvas;
     [SerializeField] private Text gudAnswerText;
 
+    [SerializeField] private GameObject answer;
+    [SerializeField] private Text RoundUI;
+
+    [SerializeField] private GameObject pinsPrefab;
+
     void Start()
     {
+        UpdateRoundUI();
         SetSoluce();
         AssignColor();
         victoryCanvas.SetActive(false);
         defeatCanvas.SetActive(false);
         Play();
+        answer.SetActive(false);
     }
 
     private void Update()
@@ -54,8 +60,8 @@ public class LevelManager : MonoBehaviour
                 newSphere = Instantiate(hit.collider.gameObject, new Vector3(hit.collider.transform.position.x, hit.collider.transform.position.y, hit.collider.transform.position.z), Quaternion.identity);
                 aSpawn = true;
             }
-            
-            if(newSphere != null) 
+
+            if (newSphere != null)
                 newSphere.transform.position = new Vector3(hit.point.x, 0, hit.point.z);
         }
 
@@ -78,7 +84,7 @@ public class LevelManager : MonoBehaviour
     {
         Ray ray = cam.ScreenPointToRay(Input.mousePosition);
         Debug.DrawRay(ray.origin, ray.direction, Color.red * 10);
-        
+
         Physics.Raycast(ray.origin, ray.direction, out hit);
 
     }
@@ -182,9 +188,6 @@ public class LevelManager : MonoBehaviour
                 break;
             ////////////////////////////////////
             case 11:
-                break;
-            ////////////////////////////////////
-            case 12:
                 GameOver();
                 break;
             ////////////////////////////////////
@@ -193,25 +196,28 @@ public class LevelManager : MonoBehaviour
 
     private void OneMoreRound()
     {
+
         childrens = linesArrays[roundIndex].GetComponentsInChildren<Initialised>();
 
-        foreach(Initialised init in childrens)
+        foreach (Initialised init in childrens)
         {
             init.gameObject.GetComponent<SphereCollider>().enabled = true;
         }
+
     }
 
     private void GameOver()
     {
         Pause();
         defeatCanvas.SetActive(true);
+        answer.SetActive(true);
     }
 
     private void Verify()
     {
         int a = 0;
         int gudAnswer = 0;
-        
+
         foreach (Initialised init in childrens)
         {
             print("in foreach init");
@@ -219,6 +225,8 @@ public class LevelManager : MonoBehaviour
 
             if (init.indexColor == solution[a])
             {
+                GameObject newGo = Instantiate(pinsPrefab);
+                newGo.transform.position = init.transform.position;
                 gudAnswer++;
                 gudAnswerText.text = ("Bonnes couleurs au bon emplacement: " + gudAnswer);
 
@@ -234,18 +242,23 @@ public class LevelManager : MonoBehaviour
             }
             a++;
         }
-                
+
         roundIndex++;
+        UpdateRoundUI();
         print("Next Round");
         print("Current Round " + roundIndex);
 
-        OneMoreRound();
+        if (roundIndex < 11)
+        {
+            OneMoreRound();
+        }
     }
 
     private void Victory()
     {
         print("Victory");
         Pause();
+        answer.SetActive(true);
 
         victoryCanvas.SetActive(true);
     }
@@ -263,5 +276,15 @@ public class LevelManager : MonoBehaviour
     private void Play()
     {
         Time.timeScale = 1;
+    }
+
+    public void OnApplicationQuit()
+    {
+        Application.Quit();
+    }
+
+    private void UpdateRoundUI()
+    {
+        RoundUI.text = ("Round " + (roundIndex + 1) + "/11");
     }
 }
